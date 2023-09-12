@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(5, 5, 5);
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden; /* Prevents any horizontal scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.7); /* Slight grey to make the text pop */
+    border-radius: 10px;
+    opacity: 0; /* Hidden by default */
+    animation: fadeIn 1.5s 1s forwards; /* Animation to fade in the content */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.essay-content {
+    text-align: justify;
+}
+
+.essay-content h1 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.essay-image {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.week3-bg {
+    background-image: url('assets/clouds_reading.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* ensures the image covers the whole viewport */
+    background-attachment: fixed; /* ensures the image remains stationary when the page is scrolled */
+}
